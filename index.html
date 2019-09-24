@@ -83,12 +83,14 @@
             <p class="promo-slider__text">со скидкой 20%!</p>
           </div>
         </div>
-        <div class="promo-slider__buttons">
-          <a class="button button-promo" href="#">посмотреть акции</a>
-          <a class="button button-appointment" href="#">записаться на прием</a>
+        <div class="container buttons-container">
+          <div class="promo-slider__buttons">
+            <a class="button button-promo" href="#">посмотреть акции</a>
+            <a class="button button-appointment" href="#">записаться на прием</a>
+          </div>
+          <button class="promo-slider__togle promo-slider__togle-left buttonres"></button>
+          <button class="promo-slider__togle promo-slider__togle-right buttonres"></button>
         </div>
-        <button class="promo-slider__togle promo-slider__togle-left buttonres"></button>
-        <button class="promo-slider__togle promo-slider__togle-right buttonres"></button>
       </div>
     </section>
     <section class="about-us">
@@ -159,76 +161,286 @@
             <button class="price-list__search-button button-callback">Найти</button>
           </div>
           <div class="price-list__goods">
-            <table class="price-list__table">
-              <tr>
-                <td class="price-list__table-name">Название услуги</td>
-                <td class="price-list__table-price">Стоимость</td>
-              </tr>
-              <tr>
-                <td>Аппаратная диагностика кожи на аппарате Anterra <br>
-                  -аппаратное тестирование кожи лица</td>
-                <td>500 руб</td>
-              </tr>
-              <tr>
-                <td>Ботулинотерапия. Лечение гипергидроза препаратом Диспорт 10 ед</td>
-                <td>1 000 руб</td>
-              </tr>
-              <tr>
-                <td>Ботулинотерапия. Введение препарата Диспорт (DYSPORT) 1 ед</td>
-                <td>200 руб</td>
-              </tr>
-              <tr>
-                <td>Брайталайв Крем для выравнивания тона кожи без ретинола <br>
-                  серии «Ossential®» (Ossential Brightalive Non-Retinol Skin Brightener)</td>
-                <td>9 900 руб</td>
-              </tr>
-              <tr>
-                <td>Дерматологический пилинг <br>
-                  (гликолевый ,препарат Glycolic Gel-Peel 30%) 50% /70%</td>
-                <td>3 000 руб</td>
-              </tr>
-              <tr>
-                <td>Дерматологический пилинг <br>
-                  (миндальный,препарат Mandelic Gel- Peel)</td>
-                <td>4 500 руб</td>
-              </tr>
-              <tr>
-                <td>Дерматологический пилинг (салициловый,препарат Anti-Acne Peel)</td>
-                <td>4 500 руб</td>
-              </tr>
-              <tr>
-                <td>Фаза 2: Программа для зрелой кожи <br>
-                  Очищающее средство с отшелушивающим действием серии «Offects®» <br>
-                  (Offects Exfoliating Cleanser) - 40 мл. Полирующее</td>
-                <td>19 600 руб</td>
-              </tr>
-              <tr>
-                <td>Фототерапия кожи 2D моделирование -IPL фотоомоложение лица, <br>
-                  аппарат М22 (коррекция пигментации, удаление <br>
-                  поверхностных сосудов) зона лицо/шея,/декольте</td>
-                <td>9 800 руб</td>
-              </tr>
-              <tr>
-                <td>Фототерапия кожи 3D моделирование -IPL фотоомоложение лица <br>
-                  аппарат М22 (коррекция пигментации, удаление <br>
-                  поверхностных сосудов, термолифтинг)</td>
-                <td>14 700 руб</td>
-              </tr>
-              <tr>
-                <td>Фототерапия кожи -IPL фотоомоложение кистей рук <br>
-                  аппарат М22 (удаление пигментации)</td>
-                <td>5 400 руб</td>
-              </tr>
-            </table>
+            <div class="price-list__slide">
+              <table class="price-list__table">
+                <tr>
+                  <td class="price-list__table-name">Название услуги</td>
+                  <td class="price-list__table-price">Стоимость</td>
+                </tr>
+                <tr>
+                  <td>Аппаратная диагностика кожи на аппарате Anterra <br>
+                    -аппаратное тестирование кожи лица</td>
+                  <td>500 руб</td>
+                </tr>
+                <tr>
+                  <td>Ботулинотерапия. Лечение гипергидроза препаратом Диспорт 10 ед</td>
+                  <td>1 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Ботулинотерапия. Введение препарата Диспорт (DYSPORT) 1 ед</td>
+                  <td>200 руб</td>
+                </tr>
+                <tr>
+                  <td>Брайталайв Крем для выравнивания тона кожи без ретинола <br>
+                    серии «Ossential®» (Ossential Brightalive Non-Retinol Skin Brightener)</td>
+                  <td>9 900 руб</td>
+                </tr>
+                <tr>
+                  <td>Дерматологический пилинг <br>
+                    (гликолевый ,препарат Glycolic Gel-Peel 30%) 50% /70%</td>
+                  <td>3 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Дерматологический пилинг <br>
+                    (миндальный,препарат Mandelic Gel- Peel)</td>
+                  <td>4 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Дерматологический пилинг (салициловый,препарат Anti-Acne Peel)</td>
+                  <td>4 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Фаза 2: Программа для зрелой кожи <br>
+                    Очищающее средство с отшелушивающим действием серии «Offects®» <br>
+                    (Offects Exfoliating Cleanser) - 40 мл. Полирующее</td>
+                  <td>19 600 руб</td>
+                </tr>
+                <tr>
+                  <td>Фототерапия кожи 2D моделирование -IPL фотоомоложение лица, <br>
+                    аппарат М22 (коррекция пигментации, удаление <br>
+                    поверхностных сосудов) зона лицо/шея,/декольте</td>
+                  <td>9 800 руб</td>
+                </tr>
+                <tr>
+                  <td>Фототерапия кожи 3D моделирование -IPL фотоомоложение лица <br>
+                    аппарат М22 (коррекция пигментации, удаление <br>
+                    поверхностных сосудов, термолифтинг)</td>
+                  <td>14 700 руб</td>
+                </tr>
+                <tr>
+                  <td>Фототерапия кожи -IPL фотоомоложение кистей рук <br>
+                    аппарат М22 (удаление пигментации)</td>
+                  <td>5 400 руб</td>
+                </tr>
+              </table>
+            </div>
+            <div class="price-list__slide shide">
+              <table class="price-list__table">
+                <tr>
+                  <td class="price-list__table-name">Название услуги</td>
+                  <td class="price-list__table-price">Стоимость</td>
+                </tr>
+                <tr>
+                  <td>Первичный прием (осмотр, консультация) врача-косметолога<br> (Шабунина Э.А., Базаева С.В.)</td>
+                  <td>2 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Первичный прием (осмотр, консультация) врача-косметолога д.м.н. <br> Жабоева С.Л.</td>
+                  <td>5 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Первичный прием (осмотр, консультация) врача-дерматолога<br> (Шабунина Э.А., Базаева С.В.)</td>
+                  <td>2 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Первичный прием (осмотр, консультация) врача-дерматолога д.м.н. <br> Жабоева С.Л.</td>
+                  <td>5 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Повторный прием (осмотр, консультация) врача - косметолога <br> (Шабунина Э.А., Базаева С.В.)</td>
+                  <td>1 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Повторный прием (осмотр, консультация) врача - косметолога, д.м.н. <br> Жабоева С.Л.</td>
+                  <td>2 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Повторный прием (осмотр, консультация) врача - дерматолога <br>(Шабунина Э.А., Базаева С.В.)</td>
+                  <td>1 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Повторный прием (осмотр, консультация) врача - дерматолога, д.м.н. <br> Жабоева С.Л.	</td>
+                  <td>2 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br> (препарат "Meso-Warton", биоревитализация - 1,5 мл)</td>
+                  <td>17 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br> (препарат "Meso-Xanthin", биоревитализация - 1,5 мл)</td>
+                  <td>17 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br>( препарат Mesoeye) 1 мл.</td>
+                  <td>17 500 руб</td>
+                </tr>
+              </table>
+            </div>
+            <div class="price-list__slide shide">
+              <table class="price-list__table">
+                <tr>
+                  <td class="price-list__table-name">Название услуги</td>
+                  <td class="price-list__table-price">Стоимость</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br>(препарат Мesosculpt) 1 мл.</td>
+                  <td>17 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br>(препарат "Skin B", биостимуляция ) 5 мл.</td>
+                  <td>8 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br>(препарат "Коллост" ) 1,5 мл.</td>
+                  <td>17 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br>(препарат Aquashine, биоревитализация 2 мл)</td>
+                  <td>17 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br>(препарат Filorga M-HA 18, биоревитализация ) 1 мл.</td>
+                  <td>17 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br>(препарат Stylage Hydro, биоревитализация ) 1 мл.	</td>
+                  <td>11 700 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br>(препарат Профайло, 2 мл. )</td>
+                  <td>18 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов <br>(препаратTeosyal Meso expert, биоревитализация ) 3 мл.	</td>
+                  <td>17 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение лекарственных препаратов с использованием канюли</td>
+                  <td>2 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение препаратов <br>(препарат Aestefill 10 мл )</td>
+                  <td>49 900 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение препаратов ( препарат "Sculptra" 10 мл.)</td>
+                  <td>49 900 руб</td>
+                </tr>
+              </table>
+            </div>
+            <div class="price-list__slide shide">
+              <table class="price-list__table">
+                <tr>
+                  <td class="price-list__table-name">Название услуги</td>
+                  <td class="price-list__table-price">Стоимость</td>
+                </tr>
+                <tr>
+                  <td>Ультрафонофорез лекарственный <br>(безинъекционная мезотерапия волосистой части головы) 2,5 мл.</td>
+                  <td>4 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Ультрафонофорез лекарственный (безинъекционная мезотерапия: <br> препарат " Fusion,Dermaheal "-антицеллюлитная,лимфодренажная 5 мл.	</td>
+                  <td>5 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Ультрафонофорез лекарственный (безинъекционная мезотерапия: <br> препарат "Fusion,Dermaheal"-лицо) 2,5 мл.</td>
+                  <td>5 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение препаратов <br>(препарат Лонгидаза 1 мл)</td>
+                  <td>1 800 руб</td>
+                </tr>
+                <tr>
+                  <td>Внутрикожное введение препаратов <br>(препарат Дипроспан 1 мл)</td>
+                  <td>3 500 руб</td>
+                </tr>
+                <tr>
+                  <td>Ботулинотерапия. Внутримышечное введение препарата Диспорт (DYSPORT) 1 ед</td>
+                  <td>200 руб</td>
+                </tr>
+                <tr>
+                  <td>Ботулинотерапия. Лечение гипергидроза препаратом Диспорт 10 ед</td>
+                  <td>1 200 руб</td>
+                </tr>
+                <tr>
+                  <td>Ботулинотерапия Внутримышечное введение препарата Ксеомин 1 ед.</td>
+                  <td>350 руб</td>
+                </tr>
+                <tr>
+                  <td>Инъекционное введение лекарственных препаратов в очаг поражения кожи <br>(плазмолифтинг)</td>
+                  <td>7 800 руб</td>
+                </tr>
+                <tr>
+                  <td>Инъекционное введение лекарственных препаратов в очаг поражения кожи (плазмолифтинг волосистой части головы)</td>
+                  <td>5 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Газожидкостный пилинг</td>
+                  <td>2 900 руб</td>
+                </tr>
+              </table>
+            </div>
+            <div class="price-list__slide shide">
+              <table class="price-list__table">
+                <tr>
+                  <td class="price-list__table-name">Название услуги</td>
+                  <td class="price-list__table-price">Стоимость</td>
+                </tr>
+                <tr>
+                  <td>Пилинг гликолевый (ENERPEEL, Италия)</td>
+                  <td>4 350 руб</td>
+                </tr>
+                <tr>
+                  <td>Пилинг Джесснера (ENERPEEL, Италия)</td>
+                  <td>4 350 руб</td>
+                </tr>
+                <tr>
+                  <td>Пилинг зоны вокруг глаз и губ (ENERPEEL, Италия)</td>
+                  <td>4 340 руб</td>
+                </tr>
+                <tr>
+                  <td>Пилинг кистей рук (ENERPEEL, Италия)</td>
+                  <td>4 350 руб</td>
+                </tr>
+                <tr>
+                  <td>Пилинг миндальный (ENERPEEL, Италия)</td>
+                  <td>4 350 руб</td>
+                </tr>
+                <tr>
+                  <td>Пилинг Обаджи обновляющий трёхэтапный (OBAGI TRIPLE PEEL)</td>
+                  <td>27 100 руб</td>
+                </tr>
+                <tr>
+                  <td>Пилинг пировиноградный (ENERPEEL, Италия)</td>
+                  <td>4 350 руб</td>
+                </tr>
+                <tr>
+                  <td>Пилинг салициловый (ENERPEEL, Италия)</td>
+                  <td>4 350 руб</td>
+                </tr>
+                <tr>
+                  <td>Пилинг шеи и декольте (ENERPEEL, Италия)</td>
+                  <td>4 350 руб</td>
+                </tr>
+                <tr>
+                  <td>Контурная пластика лица - (препараты:Radiess) - 0,8 мл</td>
+                  <td>20 000 руб</td>
+                </tr>
+                <tr>
+                  <td>Контурная пластика лица - (препараты:Radiess) - 1,5 мл</td>
+                  <td>33 000 руб</td>
+                </tr>
+              </table>
+            </div>
           </div>
           <div class="price-list__buttons-block">
-            <button class="price-list__button buttonres">«</button>
+            <button class="price-list__button buttonres price-list__button-left">«</button>
             <button class="price-list__button price-list__button--active buttonres">1</button>
             <button class="price-list__button buttonres">2</button>
             <button class="price-list__button buttonres">3</button>
             <button class="price-list__button buttonres">4</button>
             <button class="price-list__button buttonres">5</button>
-            <button class="price-list__button buttonres">»</button>
+            <button class="price-list__button buttonres price-list__button-right">»</button>
           </div>
         </form>
         <form action="" class="appointment service__form" method="POST">
@@ -290,8 +502,8 @@
       <div class="container">
         <div class="our-staff__wrapper">
           <h2 class="our-staff__title titles">Наши врачи</h2>
-          <button class="our-staff__left-arrow buttonres"></button>
-          <button class="our-staff__right-arrow buttonres"></button>
+          <button class="our-staff__left-arrow buttonres"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 155.11"><defs><style>.cls-1{fill:#f6821f;}.cls-2{fill:#fff;fill-opacity:0.5;}</style></defs><title>кнопка в слайдер влевоРесурс 2</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><path class="cls-1" d="M0,155.11l24.12-14.52a6,6,0,0,0,2.88-5.1V19.16A6,6,0,0,0,24,14L0,0Z"/><path class="cls-2" d="M15.83,86.06a.91.91,0,0,0,.65-.27l1.46-1.46a.91.91,0,0,0,0-1.29l-4.4-4.4,4.4-4.39a.91.91,0,0,0,.27-.65.87.87,0,0,0-.27-.64l-1.46-1.47a.91.91,0,0,0-.65-.27.87.87,0,0,0-.64.27L8.68,78a.87.87,0,0,0-.27.64.89.89,0,0,0,.27.65l6.51,6.5A.87.87,0,0,0,15.83,86.06Z"/></g></g></svg></button>
+          <button class="our-staff__right-arrow buttonres"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27 155.11"><defs><style>.cls-1{fill:#f6821f;}.cls-2{fill:#fff;fill-opacity:0.5;}</style></defs><title>кнопка в слайдерРесурс 1</title><g id="Слой_2" data-name="Слой 2"><g id="Слой_1-2" data-name="Слой 1"><path class="cls-1" d="M27,155.11,2.88,140.59A6,6,0,0,1,0,135.49V19.16A6,6,0,0,1,3,14L27,0Z"/><path class="cls-2" d="M11.81,85.79l6.51-6.5a.89.89,0,0,0,.27-.65.87.87,0,0,0-.27-.64l-6.51-6.51a.87.87,0,0,0-.64-.27.91.91,0,0,0-.65.27L9.06,73a.87.87,0,0,0-.27.64.91.91,0,0,0,.27.65l4.4,4.39L9.06,83a.91.91,0,0,0,0,1.29l1.46,1.46a.91.91,0,0,0,.65.27A.87.87,0,0,0,11.81,85.79Z"/></g></g></svg></button>
           <div class="our-staff__slider staff-slider">
             <div class="staff-slider__slide">
               <div class="staff-slider__slide-wrapper">
@@ -409,7 +621,7 @@
           </a>
           <div class="news__notification-links">
             <a class="news__link" href="#">@clinicamalyshevoy.antiage</a>
-            <a class="news__sub-button" href=""></a>
+            <a class="news__sub-button button-appointment button" href="#">Подписаться</a>
           </div>
         </div>
         <div class="news__content-block">
@@ -461,8 +673,8 @@
                   placeholder="Email">
                 <textarea class="callback-form__input callback-form__message" name="callback-message"
                   placeholder="Ваше сообщение"></textarea>
-                <button type="submit" class="callback-form__button buttonres button button-appointment"
-                  >записаться на прием</button>
+                <button type="submit" class="callback-form__button buttonres button button-appointment">записаться на
+                  прием</button>
               </div>
               <div class="callback-form__addition">
                 <p class="callback-form__addition-text">Заполняя все формы на нашем сайте, вы даете согласие на

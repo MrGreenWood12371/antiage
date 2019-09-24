@@ -4,14 +4,36 @@ let promoRightArrow = document.querySelector('.promo-slider__togle-right');
 let current = 0;
 let priceListCurrent = 0;
 let staffCurrent = 0;
+let promoDots = document.querySelectorAll('.promo-slider__dot');
+let priceDots = document.querySelectorAll('.price-list__button');
 
 function slider(slides, counter) {
   for (let i = 0; i<slides.length; i++) {
     slides[i].classList.add('shide');
+    promoDots[i].classList.remove('promo-slider__dot--active');
   }
   slides[counter].classList.remove('shide');
-
+  promoDots[counter].classList.add('promo-slider__dot--active');
 }
+
+function priceSlider(slides, counter) {
+  for (let i = 0; i<slides.length; i++) {
+    slides[i].classList.add('shide');
+    priceDots[i].classList.remove('price-list__button--active');
+  }
+  slides[counter].classList.remove('shide');
+  priceDots[counter].classList.add('price-list__button--active');
+}
+
+window.onload = setInterval(function eventFire(el = promoRightArrow, etype = 'click'){
+  if (el.fireEvent) {
+    el.fireEvent('on' + etype);
+  } else {
+    var evObj = document.createEvent('Events');
+    evObj.initEvent(etype, true, false);
+    el.dispatchEvent(evObj);
+  }
+}, 5000);
 
 promoLeftArrow.addEventListener('click', function(){
   if(current - 1 == -1) {
@@ -33,6 +55,7 @@ promoRightArrow.addEventListener('click', function(){
   slider(promoSlides, current);
 })
 
+
 let additionalText = document.querySelector('.about-us__additional-text');
 let buttonMore = document.querySelector('.button-more');
 let textImage = document.querySelector('.about-us__image')
@@ -50,23 +73,23 @@ let priceListSlides = document.querySelectorAll('.price-list__slide');
 priceListButtonLeft.addEventListener('click', function(evt){
   evt.preventDefault();
   if(priceListCurrent - 1 == -1) {
-    current = priceListSlides.length-1;
+    priceListCurrent = priceListSlides.length-1;
   }
   else {
     priceListCurrent--;
   }
-  slider(priceListSlides, priceListCurrent);
+  priceSlider(priceListSlides, priceListCurrent);
 })
 
 priceListButtonRight.addEventListener('click', function(evt){
   evt.preventDefault();
-  if(current + 1 == priceListSlides.length) {
+  if(priceListCurrent + 1 == priceListSlides.length) {
     priceListCurrent = 0;
   }
   else {
     priceListCurrent++;
   }
-  slider(priceListSlides, priceListCurrent);
+  priceSlider(priceListSlides, priceListCurrent);
 })
 
 let staffButtonLeft = document.querySelector('.our-staff__left-arrow');

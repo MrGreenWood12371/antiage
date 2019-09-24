@@ -267,12 +267,12 @@ a {
 }
 
 .promo-slider__slide {
-  padding-top: 120px;
+  padding-top: 80px;
   padding-bottom: 260px;
   background-image: url("../img/promo-slide-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: contain;
 }
 
 .promo-slider__slide:nth-child(2) {
@@ -301,6 +301,30 @@ a {
   font-weight: bold;
 }
 
+.promo-slider__dots {
+  position: absolute;
+  top: -50px;
+  left: 550px;
+}
+
+.promo-slider__dot {
+  position: absolute;
+  content: '';
+  width: 10px;
+  height: 10px;
+  background-color: #05A0FF;
+  opacity: 0.4;
+  border-radius: 50%;
+}
+
+.promo-slider__dot:last-child {
+  left: 20px;
+}
+
+.promo-slider__dot--active {
+opacity: 1;
+}
+
 .promo-slider__buttons {
   position: absolute;
   bottom: 132px;
@@ -315,7 +339,7 @@ a {
 }
 
 .promo-slider__togle-left {
-  left: -40px;
+  left: -100px;
   background-image: url("../img/buttons/left-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -325,7 +349,7 @@ a {
   background-image: url("../img/buttons/right-arrow.svg");
   background-repeat: no-repeat;
   background-position: center;
-  right: -40px;
+  right: -100px;
 }
 
 .about-us {
@@ -527,7 +551,8 @@ a {
           flex-direction: row;
 }
 
-.price-list__button {
+.price-list__button,
+.price-list__toggle {
   width: 44px;
   height: 44px;
   border: 1px solid #cccccc;
@@ -609,7 +634,7 @@ a {
 
 .promo-card {
   position: relative;
-  margin-bottom: 95px;
+  margin-bottom: 145px;
 }
 
 .promo-card__section-title {
@@ -641,7 +666,7 @@ a {
   background-color: #fff;
   border-radius: 10px;
   margin-top: -370px;
-  margin-bottom: 80px;
+  margin-bottom: 20px;
   -webkit-box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
           box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.1);
 }
@@ -741,7 +766,6 @@ a {
 .our-staff__left-arrow {
   position: absolute;
   width: 30px;
-  height: 30px;
   top: 215px;
   left: 0px;
   cursor: pointer;
@@ -751,7 +775,6 @@ a {
   position: absolute;
   content: '';
   width: 30px;
-  height: 30px;
   top: 215px;
   right: 0px;
   cursor: pointer;
@@ -826,13 +849,14 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 46px;
+  margin-top: 36px;
   margin-bottom: 40px;
 }
 
 .news__notification-links {
   display: flex;
   flex-direction: column;
+  margin-left: 15px;
 }
 
 .news__link {
@@ -953,6 +977,7 @@ a {
   padding-left: 20px;
   padding-top: 26px;
   padding-right: 20px;
+  margin-bottom: 20px;
 }
 
 .callback-form__title {

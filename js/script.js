@@ -25,6 +25,36 @@ function priceSlider(slides, counter) {
   priceDots[counter].classList.add('price-list__button--active');
 }
 
+function staffSlider(slides, counter) {
+  for (let i = 0; i<slides.length; i++) {
+    slides[i].classList.add('shide');
+  }
+  slides[counter].classList.remove('shide');
+}
+
+
+// кликабельные точки
+function dotsClick(){
+  for (let i = 0; i<promoDots.length; i++){
+    promoDots[i].addEventListener('click', function(){
+      slider(promoSlides, i);
+    });
+  }
+}
+
+// пролистывание списка услуг
+function buttonPriceSlider(){
+
+  for (let i = 0; i<priceDots.length; i++){
+    priceDots[i].addEventListener('click', function(){
+      priceSlider(priceListSlides, i);
+    });
+  }
+}
+
+buttonPriceSlider();
+dotsClick();
+
 window.onload = setInterval(function eventFire(el = promoRightArrow, etype = 'click'){
   if (el.fireEvent) {
     el.fireEvent('on' + etype);
@@ -79,6 +109,7 @@ priceListButtonLeft.addEventListener('click', function(evt){
     priceListCurrent--;
   }
   priceSlider(priceListSlides, priceListCurrent);
+
 })
 
 priceListButtonRight.addEventListener('click', function(evt){
@@ -105,7 +136,7 @@ staffButtonLeft.addEventListener('click', function(evt){
   else {
     staffCurrent--;
   }
-  slider(staffSlides, staffCurrent);
+  staffSlider(staffSlides, staffCurrent);
 })
 
 staffButtonRight.addEventListener('click', function(evt){
@@ -116,5 +147,5 @@ staffButtonRight.addEventListener('click', function(evt){
   else {
     staffCurrent++;
   }
-  slider(staffSlides, staffCurrent);
+  staffSlider(staffSlides, staffCurrent);
 })

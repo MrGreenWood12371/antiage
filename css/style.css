@@ -272,7 +272,7 @@ a {
   background-image: url("../img/promo-slide-1.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
 }
 
 .promo-slider__slide:nth-child(2) {
@@ -778,6 +778,10 @@ opacity: 1;
   top: 215px;
   right: 0px;
   cursor: pointer;
+}
+
+.staff-slider {
+  height: 600px;
 }
 
 .staff-slider__slide-wrapper {
